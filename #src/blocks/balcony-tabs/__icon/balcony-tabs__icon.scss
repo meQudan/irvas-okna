@@ -1,0 +1,46 @@
+// (__icon
+.balcony-tabs__icon {
+  width: 110px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 45px;
+  margin-bottom: 45px;
+
+  &-content {
+    max-width: 470px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  &-img {
+    border-radius: 50%;
+    margin-bottom: 17px;
+  }
+
+  &-about {
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  &-price {
+    margin-top: auto;
+  }
+}
+@media (max-width: 645px) {
+  .balcony-tabs__icon {
+    margin-right: 22px;
+    margin-left: 22px;
+  }
+
+  .balcony-tabs__icon-content {
+    justify-content: space-around;
+  }
+}
+
+// __icon)

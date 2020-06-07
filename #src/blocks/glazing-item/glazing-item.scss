@@ -1,0 +1,41 @@
+.glazing-item {
+  width: 140px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  text-decoration: underline;
+  color: #249ae6;
+  position: relative;
+  transition: color 0.7s;
+
+  &:hover {
+    color: lightgreen;
+    transition: color 0.7s;
+  }
+
+  &__img {
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 740px) {
+  .glazing-item {
+    margin: 0 25px 40px 25px;
+  }
+}
+
+@media (max-width: 379px) {
+  .glazing-item {
+    margin: 0 10px 40px 10px;
+  }
+}

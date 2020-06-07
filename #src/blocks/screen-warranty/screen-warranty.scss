@@ -1,0 +1,44 @@
+.screen-warranty {
+  background-color: #0686c5;
+
+  &__item {
+    text-align: center;
+    width: 180px;
+
+    &-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+    }
+
+    &-img {
+      height: 70px;
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .screen-warranty__item {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &-img {
+      height: 55px;
+    }
+
+    &-text {
+      font-size: calc(12px + 6 * ((100vw - 320px) / (610 - 320)));
+    }
+  }
+}

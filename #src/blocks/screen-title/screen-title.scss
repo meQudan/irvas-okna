@@ -1,0 +1,62 @@
+.screen-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+
+  &__container {
+    margin-bottom: calc(40px + 40 * ((100vw - 320px) / (1170 - 320)));
+  }
+
+  &__text {
+    @include adaptiv-font(30, 24, 320);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+
+    &_color {
+      &_black {
+        color: #333333;
+      }
+
+      &_white {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__line {
+    width: 170px;
+    height: 2px;
+    &_color {
+      &_blue {
+        background: linear-gradient(
+          to right,
+          rgba(41, 156, 230, 0) 0%,
+          rgba(41, 156, 230, 1) 50%,
+          rgba(41, 156, 230, 0) 100%
+        );
+      }
+
+      &_white {
+        background: linear-gradient(
+          to right,
+          rgba(230, 243, 249, 0) 0%,
+          rgba(230, 243, 249, 1) 50%,
+          rgba(230, 243, 249, 0) 100%
+        );
+      }
+    }
+  }
+}
+
+@media (min-wdth: 1170px) {
+  .screen-title {
+    margin-bottom: 80px;
+
+    &__text {
+      font-size: 30px;
+    }
+  }
+}

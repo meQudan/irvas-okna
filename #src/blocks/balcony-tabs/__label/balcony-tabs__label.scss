@@ -1,0 +1,65 @@
+// (__Label
+
+.balcony-tabs__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100px;
+  box-sizing: border-box;
+
+  &-text {
+    color: #000000;
+    font-family: "OpenSans";
+    @include adaptiv-font(20, 12, 645);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px dotted #000000;
+    line-height: 32px;
+    transition: all 0.7s;
+
+    &:hover {
+      transition: all 0.7s;
+      color: #0085db;
+      border-color: #0085db;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .balcony-tabs__label-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .balcony-tabs__label {
+    height: 80px;
+  }
+}
+
+@media (min-width: 645px) {
+  .balcony-tabs__label {
+    &:not(:first-of-type) {
+      border-left: 2px solid transparent;
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+      border-image-slice: 1;
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .balcony-tabs__label {
+    flex-wrap: wrap;
+    width: 50%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+}
+// __Label)

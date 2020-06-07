@@ -1,0 +1,50 @@
+.screen-quastions {
+  background-color: #00a0eb;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__text {
+    color: #ffffff;
+    @include adaptiv-font(30, 24, 320);
+    margin-right: 40px;
+    text-align: center;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: #ffffff;
+    @include adaptiv-font(30, 24, 320);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 1170px) {
+  .screen-quastions {
+    &__text {
+      font-size: 30px;
+    }
+
+    &__btn {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .screen-quastions {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}

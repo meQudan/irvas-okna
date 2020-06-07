@@ -1,0 +1,23 @@
+.balcony-tabs__external {
+  margin: 40px 0;
+
+  &-container {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-img-container {
+    width: 36px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &-img {
+    text-align: right;
+  }
+}

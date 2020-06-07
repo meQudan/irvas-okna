@@ -1,0 +1,133 @@
+.header {
+  &__container {
+    padding: 20px 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__company-specialization {
+    width: 220px;
+    font-size: 14px;
+    color: #0096dc;
+    line-height: 18px;
+  }
+
+  &__call-measurer {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #55a831;
+    background-color: #fff;
+
+    &-img {
+      width: 30px;
+      margin-left: 15px;
+    }
+
+    &-text {
+      color: #55a831;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+
+  &__work-time {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+
+    &-img {
+      width: 30px;
+      margin-top: -15px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    &-text {
+      color: #333333;
+      margin-bottom: 9px;
+    }
+
+    &-time {
+      font-size: 18px;
+      font-weight: 700;
+      color: #333333;
+    }
+  }
+
+  &__tel {
+    width: 230px;
+    height: 50px;
+
+    &-img {
+      width: 20px;
+      float: left;
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &-number {
+      display: block;
+      color: #333333;
+      font-size: 23px;
+      font-weight: 700;
+    }
+    &-callback {
+      display: block;
+      color: #0089cc;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: underline;
+      margin-top: 10px;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 965px) {
+  .header {
+    &__company-specialization {
+      display: none;
+    }
+
+    &__call-measurer {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .header__work-time {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .header {
+    &__container {
+      justify-content: space-around;
+    }
+
+    &__tel {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 359px) {
+  .header__call-measurer {
+    display: none;
+  }
+}
