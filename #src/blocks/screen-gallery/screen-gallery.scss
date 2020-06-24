@@ -18,6 +18,7 @@
       position: relative;
       min-width: 150px;
       max-width: 270px;
+      list-style: none;
 
       &:not(:last-child) {
         margin-right: 30px;
@@ -63,5 +64,17 @@
 @media (max-width: 410px) {
   .screen-gallery__img-container {
     width: 150px;
+  }
+}
+
+.white-popup {
+  position: relative;
+  background: transparent;
+  padding: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  & img {
+    width: 100%;
   }
 }
