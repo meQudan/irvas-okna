@@ -22,6 +22,11 @@
     border-radius: 10px;
     border: 2px solid #55a831;
     background-color: #fff;
+    color: #55a831;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 10px;
 
     &-img {
       width: 30px;
@@ -29,10 +34,6 @@
     }
 
     &-text {
-      color: #55a831;
-      font-size: 14px;
-      font-weight: 700;
-      text-align: left;
       margin-left: 10px;
     }
   }

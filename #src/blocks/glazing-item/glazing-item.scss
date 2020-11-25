@@ -9,6 +9,9 @@
   color: #249ae6;
   position: relative;
   transition: color 0.7s;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
 
   &:hover {
     color: lightgreen;
@@ -19,12 +22,6 @@
     max-width: 100px;
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  &__text {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
   }
 }
 
